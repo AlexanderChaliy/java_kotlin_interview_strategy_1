@@ -10,4 +10,12 @@ public class CustomStack {
     public int getMax(){
         throw new UnsupportedOperationException("Not supported yet.");
     }
+
+    public void insert(int position, int item){
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
+    public int size(){
+        return 3;
+    }
 }

@@ -2,9 +2,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UsbDeviceIdParser {
-    // Regex to match the part after the last backslash
+    // Matches the part after the last backslash
+    // Find a last part in string "USBSTOR\DISK&VEN_GENERIC&PROD_USB_FLASH_DISK&REV_0.00\8&B3FE53D&0" => `8&B3FE53D&0`
     private static final Pattern SerialPattern = Pattern.compile("^(?:[^\\\\]+\\\\){2,}([^\\\\]+)$");
-    // Regex to match the port and serial ID if they are separated by an ampersand
+
+    // Matches the port and serial ID if they are separated by an ampersand
+    // Retrieve the values between '&'. 8&B3FE53D&0 parsed as `8` and `B3FE53D`
     private static final Pattern PortSerialPattern = Pattern.compile("^([^&]*)&([^&]+)");
 
     public UsbPortAndSerial getUsbPortAndSerial(String input) {
