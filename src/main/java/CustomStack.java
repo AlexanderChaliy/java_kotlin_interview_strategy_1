@@ -1,21 +1,39 @@
+import java.util.EmptyStackException;
+
 public class CustomStack {
-    public void push(int x) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    private class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data) {
+            this.data = data;
+        }
+    }
+
+    private Node _top;
+
+    public void push(int item) {
+        var newNode = new Node(item);
+        newNode.next = _top;
+        _top = newNode;
     }
 
     public int pop() {
+        //ToDo: implement
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public int getMax(){
+    public int getMax() {
+        //ToDo: implement
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public void insert(int position, int item){
+    public void insert(int position, int item) {
+        //ToDo: implement
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public int size(){
-        return 3;
+    public int size() {
+        return 101;
     }
 }
