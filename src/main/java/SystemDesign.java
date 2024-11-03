@@ -1,4 +1,5 @@
-// Design next classes: man, cat, dog, bird, raven, airplane, centaur
+// Design next classes: man, cat, bird, airplane, centaur
+
 
 // Людина
 class Man {
@@ -24,16 +25,8 @@ class Cat {
 
 }
 
-// Пес
-class Dog {
-}
-
 // Птах
 class Bird {
-}
-
-// Ворон
-class Raven {
 }
 
 // Літак
