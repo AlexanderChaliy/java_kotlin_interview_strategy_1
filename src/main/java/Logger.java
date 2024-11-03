@@ -5,14 +5,14 @@ interface ILogger {
 class FileLogger implements ILogger {
     @Override
     public void Log(String message) {
-        System.out.println("File logger call.");
+        // write to the file
     }
 }
 
 class ConsoleLogger implements ILogger {
     @Override
     public void Log(String message) {
-        System.out.println("Console logger call.");
+        // print to console
     }
 }
 
