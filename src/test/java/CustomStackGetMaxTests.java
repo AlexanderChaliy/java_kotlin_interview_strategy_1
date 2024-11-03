@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.EmptyStackException;
 import java.util.NoSuchElementException;
 
 public class CustomStackGetMaxTests {
@@ -21,7 +22,7 @@ public class CustomStackGetMaxTests {
 
     @Test
     public void testGetMaxEmptyStack() {
-        assertThrows(NoSuchElementException.class, () -> {
+        assertThrows(EmptyStackException.class, () -> {
             __Stack.getMax();
         });
     }
@@ -34,7 +35,7 @@ public class CustomStackGetMaxTests {
         __Stack.pop();
         __Stack.pop();
         __Stack.pop();
-        NoSuchElementException exception = assertThrows(NoSuchElementException.class, () -> {
+        EmptyStackException exception = assertThrows(EmptyStackException.class, () -> {
             __Stack.getMax();
         });
     }
