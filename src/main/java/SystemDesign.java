@@ -1,4 +1,4 @@
-// Design next classes: man, cat, bird, airplane, centaur
+// Design next classes: man, кінь, bird, airplane, centaur
 
 
 // Людина
@@ -20,8 +20,8 @@ class Human {
     }
 }
 
-// Кіт
-class Cat {
+// Кінь
+class Horse {
 
 }
 
