@@ -2,7 +2,7 @@
 
 
 // Людина
-class Man {
+class Human {
     private String Name;
     private Integer Age;
 
@@ -14,7 +14,7 @@ class Man {
         return Name;
     }
 
-    public Man(String name, Integer age) {
+    public Human(String name, Integer age) {
         this.Name = name;
         this.Age = age;
     }
