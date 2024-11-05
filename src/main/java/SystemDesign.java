@@ -1,4 +1,4 @@
-// Design next classes: man, кінь, bird, airplane, centaur
+// Design next classes: human, кінь, bird, airplane, centaur
 
 
 // Людина
