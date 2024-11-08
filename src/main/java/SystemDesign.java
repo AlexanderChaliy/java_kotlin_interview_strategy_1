@@ -1,4 +1,4 @@
-// Design next classes: human, кінь, bird, airplane, centaur
+// Design next classes: human, horse,  centaur
 
 
 // Людина
@@ -18,19 +18,21 @@ class Human {
         this.Name = name;
         this.Age = age;
     }
+
+    public void Eat(){
+    }
+
+    public void Run(){
+    }
 }
 
 // Кінь
 class Horse {
+    public void Eat(){
+    }
 
-}
-
-// Птах
-class Bird {
-}
-
-// Літак
-class Airplane {
+    public void Run(){
+    }
 }
 
 // Кентавр

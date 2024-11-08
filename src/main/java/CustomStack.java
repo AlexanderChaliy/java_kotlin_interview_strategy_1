@@ -1,5 +1,3 @@
-import java.util.EmptyStackException;
-
 public class CustomStack {
     private class Node {
         private int data;
@@ -10,12 +8,12 @@ public class CustomStack {
         }
     }
 
-    private Node _top;
+    private Node top;
 
     public void push(int item) {
         var newNode = new Node(item);
-        newNode.next = _top;
-        _top = newNode;
+        newNode.next = top;
+        top = newNode;
     }
 
     public int pop() {
@@ -23,17 +21,25 @@ public class CustomStack {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public int getMax() {
-        //ToDo: implement
+    public int size() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /*
+     * Inserts an element into the list at the specified index.
+     * For example:
+     * [] and insert "a" at 0 = ["a"]
+     * ["a"] and insert "b" at 0 = ["b", "a"]
+     * ["b", "a"] and insert "c" at 1 = ["b", "c", "a"]
+     * ["b", "c", "a"] and insert "d" at 3 = ["b", "c", "a", "d"]
+     * */
     public void insert(int position, int item) {
         //ToDo: implement
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public int size() {
-        return 101;
+    public int getMax() {
+        //ToDo: implement
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
